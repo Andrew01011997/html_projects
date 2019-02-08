@@ -1,0 +1,324 @@
+*,  *:before, *:after{
+	box-sizing: border-box;
+	/*border: 1px solid black;*/
+	font-family: 'Sarabun', sans-serif;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+	/*height: 100vh;*/
+	min-height: 500px;
+	background-color: #777;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+}
+.overlay-header{
+	position: absolute;
+	left: 0;top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	background-image: url(../image/picture.jpg);
+	background-repeat: none;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-color: green;
+	z-index: 0;
+}
+.header{
+	height: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	width: 90%;
+	margin:  auto;
+	margin-top: 20px;
+}
+
+.logo img{
+	max-width: 300px;
+}
+
+.menu-header{
+	width: 60%;
+}
+
+.menu-header ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+.menu-header .menu-hrefs:hover{
+	border-bottom: 3px solid white;
+	color: #fff;
+}
+.menu-header ul li:hover:last-child{
+	border: 3px solid white;
+}
+.menu-hrefs{
+	text-decoration: none;
+	color: #e6e6e6;
+	font-size: 1.2em;
+}
+.menu-header li:last-child{
+	border: 3px solid white;
+	border-radius: 3px;
+	padding: 5px;
+	margin-top: -8px;
+}
+/*-----------------------------------------------------*/
+/*------block space-------*/
+.space{
+	width: 100%;
+	height: 150px;
+	/*border: 1px solid red;*/
+	z-index: 1;
+}
+/*-------------------------------------------------*/
+.header-text{
+	z-index: 2;
+	width: auto;
+	min-height: 100px;
+	/*border: 1px solid blue;*/
+	text-align: center;
+}
+.header-text *{	z-index: 2;}
+.header-text h1{
+	font-size: 80px;
+	color: white;
+}
+.header-text p{
+	font-size: 21px;
+}
+.first-text{
+	width: 100%;
+	min-height: 100px;
+	background-color: #fff;
+	-ms-align-items: center;
+	align-items: center;
+	content: center;
+	padding-left: 180px; 
+	padding-right: 150px;
+	text-align: justify;
+}
+.first-text *{z-index: 1;}
+.first-text h1{
+	color: black;
+	font-size: 36px;
+}
+.line{
+	margin-top: 0px;
+	margin-bottom: 30px;
+	width: 100px;
+	height: 4px;
+	background-color: green;
+}
+.paragraph-first *{z-index: 1;}
+.paragraph-first{
+	width: 100%;
+}
+.paragraph-first .text{
+	line-height: 2.3em;
+}
+.main-grey-container *{z-index: 1;}
+.main-grey-container{
+	width: 100%;
+	height: 400px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: silver;
+}
+.main-grey-container .laptop{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-right: 100px;
+	height: auto;
+}
+.main-grey-container .laptop:last-child{
+	margin: 0;
+}
+.main-grey-container img{
+	max-width: 100%;
+	height: auto;
+}
+.silver-block{
+	background-color: silver;
+	z-index: 1;
+}
+.bold-text{
+	width: 100%;
+	height: 70px;
+	font-weight: bold;
+	font-size: 28px;
+}
+.comment{
+	background-color: #D5D5D5;
+	margin: 100px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 180px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: right;
+}
+.comment h5{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.comment h4{
+	font-weight: 400;
+	margin-bottom: 0;
+	font-size: 32px;
+	font-family: Courier New, sans-serif;
+}
+.people{
+	align-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.comment h5:last-child{
+	font-weight: 400;
+}
+.long-nearfoter-text *{z-index: 1;}
+.long-nearfoter-text{
+	text-align: center;
+	width: 100%;
+	padding: 220px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+.long-nearfoter-text h3{
+	font-family: Courier New, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+}
+.main-blue-container{
+	width: 100%;
+	max-height: 540px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #2e2e42;
+	padding: 5%;
+	margin-bottom: 100px;
+}
+.main-blue-container .phone{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-right: 100px;
+	height: auto;
+}
+.main-blue-container .phone:last-child{
+	margin: 0;
+}
+.main-blue-container img{
+	max-width: 100%;
+	height: auto;
+}
+.footer-container{
+	margin-top: 100px;
+	width: 100%;
+	/*height: 540px;*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: column;
+	background-color: green;
+}
+.footer-row1{
+	margin-top: 50px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 2%
+}
+
+.footer-container .web:last-child{
+	margin: 0;
+}
+.footer-container img{
+	max-width: 100%;
+	height: auto;
+}
+.footer-row2{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.footer-container .web{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-right: 5%;
+	max-width: 30%;
+	height: 280px;
+}
